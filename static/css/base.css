@@ -1,0 +1,56 @@
+:root {
+    color-scheme: only dark;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    overflow: hidden;
+}
+
+.avatar {
+    width: 150px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: auto;
+}
+
+#expiry-msg {
+    font-size: 18px;
+}
+
+h1 {
+    font-size: 30px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+a>button {
+    padding: 10px 20px;
+    width: 100px;
+    font-size: 18px;
+    background-color: #333;
+    border: none;
+    cursor: pointer;
+    flex-grow: 1;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}

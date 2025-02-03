@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verification - UWKSA Membership</title>
+    <link rel="stylesheet" href="/static/css/base.css">
+    <link rel="icon" href="/static/images/KSA.webp" type="image/x-icon">
+</head>
+
+<body>
+    <div class="container">
+        <img src="/static/images/KSA-small.webp" class="avatar" alt="">
+        <h1>Member Verification</h1>
+        {% if message %}
+        <p id="result">{{ message }}</p>
+        {% endif %}
+        {% if username and given_name and family_name %}
+        <table>
+            <tr>
+                <td>First Name</td>
+                <td>{{ given_name }}</td>
+            </tr>
+            <tr>
+                <td>Last Name</td>
+                <td>{{ family_name }}</td>
+            </tr>
+            <tr>
+                <td>Username</td>
+                <td>{{ username }}</td>
+            </tr>
+        </table>
+        {% endif %}
+    </div>
+</body>
+
+</html>
