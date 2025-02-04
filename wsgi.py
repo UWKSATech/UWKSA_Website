@@ -8,11 +8,12 @@ from membership import app
 #     )
 #     app.run()
 
-# Apply the ProxyFix middleware
-app.wsgi_app = ProxyFix(
-    app.wsgi_app, x_for=1, x_proto=1, x_host=1, x_prefix=1
-)
+
 if __name__ == "__main__":
+    # Apply the ProxyFix middleware
+    app.wsgi_app = ProxyFix(
+        app.wsgi_app, x_for=1, x_proto=1, x_host=1, x_prefix=1
+    )
     # Use the environment-provided port or default to 5000
     port = int(os.environ.get("PORT", 5000))
     # Bind to 0.0.0.0 to allow external access
