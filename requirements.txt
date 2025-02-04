@@ -11,3 +11,4 @@ qrcode==7.4.2
 typing_extensions==4.12.2
 Werkzeug==3.0.3
 authlib==1.2.1
+requests==2.31.0
