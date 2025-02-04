@@ -213,7 +213,3 @@ def join():
     # return simple message for now
     return "The UWKSA membership will return soon for W25. Stay tuned!"
   
-@app.route("/health", methods=["GET"])
-def health():
-    return "OK", 200
-
