@@ -1,5 +1,4 @@
 from werkzeug.middleware.proxy_fix import ProxyFix
-import os
 from membership import app
 
 if __name__ == "__main__":
